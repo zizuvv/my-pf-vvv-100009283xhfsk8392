@@ -84,7 +84,37 @@ img{
         display: block;
     }
 }
-
+@media (max-width: 430px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 5px auto;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 16px;
+        text-align: center;
+        margin: 5px auto;
+    }
+    p {
+        font-size: 14px;
+        margin: 5px auto;
+        line-height: 1.5;
+    }
+    
+    .section {
+        min-height: 50vh;
+        padding: 5%;
+    }
+    .sp-br {
+        display: block;
+    }
+}
 
 
 
@@ -400,6 +430,96 @@ header .image-area img {
         color: black;
     }
 }
+
+@media (max-width: 768px) {
+    .logo-area {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-area img {
+        max-width:100px;
+        height: auto;
+        margin: 10px;
+    }
+    .title-nav {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .title-nav {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .nav-bar {
+        width: 75%; 
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+    }
+    nav a {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+    }
+    .right {
+        height: 80%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header.image-area {
+        height: 70%;
+    }
+    p.tema-bottom {
+        font-size: 14px;
+        text-align: left;
+    }
+    .nav-bar.sticky {
+        height: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #b18305cc;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+    }
+    .nav-bar.sticky nav {
+        flex-direction: row;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar.sticky nav a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+    }
+}
+
+
 
 
 

@@ -141,6 +141,37 @@ img{
         display: block;
     }
 }
+@media (max-width: 430px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    h1 {
+        font-size: 24px;
+        text-align: center;
+        margin: 5px auto;
+        line-height: 1.5;
+    }
+    h2 {
+        font-size: 16px;
+        text-align: center;
+        margin: 5px auto;
+    }
+    p {
+        font-size: 14px;
+        margin: 5px auto;
+        line-height: 1.5;
+    }
+    
+    .section {
+        min-height: 50vh;
+        padding: 5%;
+    }
+    .sp-br {
+        display: block;
+    }
+}
 
 
 header {
@@ -354,6 +385,109 @@ p.tema-bottom {
         color: black;
     }
 }
+@media (max-width: 430px) {
+    header {
+        flex-direction: column;
+        height: 90vh;
+    }
+    header::before {
+        top: 25%;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        z-index: 5;
+    }
+    .left {
+        flex-direction: row;
+        height: 20%;
+        align-items: center;
+    }
+    .logo-area {
+        width: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-area img {
+        max-width:100px;
+        height: auto;
+        margin: 10px;
+    }
+    .title-nav {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    header h1 {
+        font-size: 24px;
+        text-align: left;
+    }
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 70%;
+    }
+    .nav-bar {
+        width: 75%; 
+        display: flex;
+        justify-content: center;
+    }
+    .nav-bar nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row; 
+        justify-content: center;
+    }
+    nav a {
+        flex: 1;
+        text-align: center;
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+    }
+    .right {
+        height: 80%;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    header.image-area {
+        height: 70%;
+    }
+    header.text-container {
+        height: 30%;
+        padding: 10px;
+        background-color: rgba(201, 201, 201, 0.9);
+    }
+    p.tema-bottom {
+        font-size: 14px;
+        text-align: left;
+    }
+    .nav-bar.sticky {
+        height: 40px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #b18305cc;
+        display: flex;
+        justify-content: center;
+        z-index: 1000;
+    }
+    .nav-bar.sticky nav {
+        flex-direction: row;
+        width: 60%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .nav-bar.sticky nav a {
+        font-size: 16px;
+        text-decoration: none;
+        color: black;
+    }
+}
 
 
 /*メイン*/
@@ -536,6 +670,98 @@ p.tema-bottom {
         z-index: 3;
     }
 }
+@media (max-width: 768px) {
+    .section0 {
+        height: 90vh;
+        position: relative;
+        width: 100%;
+        overflow: hidden;
+        /* background-color: rgba(255, 255, 255, 0.7); */
+        padding: 20px 10px;
+    }
+    .photo1{
+        width: 50%; 
+        max-width: 200px;
+        opacity: 0.4;
+    }
+    .photo2{
+        width: 55%;
+        max-width: 250px; 
+        height: auto; 
+        top: 400px;
+        left: -5%;
+        opacity: 0.4;
+    }
+    .photo3{
+        width: 80%;
+        max-width: 300px; 
+        height: auto; 
+        top: 150px;
+        right:-10%;
+        opacity: 0.4;
+    }
+    .photo4{
+        width: 30%;
+        max-width: 200px; 
+        height: auto; 
+        top: 500px;
+        right: 10%;
+        opacity: 0.4;
+    }
+    .photo5{
+        width: 40%;
+        max-width: 150px; 
+        height: auto; 
+        top: 75vh;
+        right: -2vw; 
+        opacity: 0.4;
+    }
+    .photo6{
+        width: 50%;
+        max-width:300px; 
+        height: auto; 
+        top: 70vh;
+        left: -5vw; 
+        z-index: 3;
+        opacity: 0.4;
+    }
+    .photo7{
+        position: absolute;
+        width: 50%;
+        max-width: 100px; 
+        height: auto; 
+        top: 70vh;
+        left: 50%;
+        z-index: 3;
+        position: absolute;
+        transform: translateX(-50%); 
+        text-align: center;
+    }
+    .section0 h1{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        z-index: 3;
+    }
+    .section0 h2{
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        z-index: 3;
+    }
+    .section0 .instagram {
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 3;
+    }
+}
 
 
 .section1 {
@@ -580,6 +806,27 @@ p.tema-bottom {
     }
     .section1 .text-container {
         flex-basis: 70%;
+        max-width: 500px; 
+        text-align: left;
+        color: #fdf4f4;
+    }
+}
+@media (max-width: 768px) {
+    .section1 {
+        margin-bottom: 50px;
+        position: relative;
+        height: 50vh;
+        background: 
+            linear-gradient(to right, rgba(0, 0, 0, 0) 10%, rgba(0, 0, 0, 0.7) 100%),
+            url(../img/ful1.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+    }
+    .section1 .text-container {
+        flex-basis: 100%;
         max-width: 500px; 
         text-align: left;
         color: #fdf4f4;
@@ -741,6 +988,9 @@ p.tema-bottom {
         left: -10%;
         top: 90px;
     }
+    .sukasi{
+        display: none;
+    }
 }
 
 
@@ -847,8 +1097,27 @@ mask-composite: intersect;
         top: 750px;
     }
 }
+@media (max-width: 768px) { 
+    .section3 .maiking1{
+        left: 15%;
+        max-width: 500px;
+        transform: translateY(50%);
+    
+      }
+      .section3 .maiking2{
+          left: -15%;
+          max-width: 500px;
+          transform: translateY(-50%);
+      
+       }
+      .section3 .dezpic1{
+        display: none;
+      }
+      .section3 .dezpic2{
+      display: none;
+      }
 
-
+}
 
 .section4{
     position: relative;
